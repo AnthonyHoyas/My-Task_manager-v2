@@ -49,6 +49,7 @@ body {
   display: inline-block;
   font-size: 16px;
   padding: 15px;
+  margin-bottom: 15px;
 }
 
 .principal .formulario .boton:hover {
@@ -73,4 +74,18 @@ body {
 
 .tareas .lista li a:hover {
   text-decoration: line-through;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.checkbox {
+  margin-left: 5px;
+}
+.user_img {
+  margin-left: 5px;
+
 }

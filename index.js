@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 
 const task = require("./controllers/task")
+// const img = require("./controllers/img")
 
 // app setup
 app.use(express.json())
@@ -19,6 +20,16 @@ app.get('/',(req, res) => {
 
 // Create here your api setup
 
+app.post('/api/addTask', (req, res) => {
+  task.addTask(req.body)
+})
+
+
+app.post('/api/deltask', (req, res) => {
+  task.taskdel(req.body)
+})
+
+app.post('/api/task', task.taskdb)
 
 
 
