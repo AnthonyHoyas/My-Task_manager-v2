@@ -2,6 +2,27 @@
 const express = require("express");
 const app = express();
 
+
+// uplaoded babyyoda
+
+require('dotenv').config();
+const cloudinary = require("cloudinary").v2;
+console.log(cloudinary.config().cloud_name);
+
+
+
+// cloudinary.uploader
+//   .upload("./Ba-yo.jpeg", {
+//     ressource_type: "image",
+//   })
+//   .then((result) => {
+//     console.log("sucess", JSON.stringify(result, null, 2));
+//   })
+//   .catch((error) => {
+//     console.log('error', JSON.stringify(error, null, 2));
+//   });
+
+
 const task = require("./controllers/task")
 // const img = require("./controllers/img")
 

@@ -1,10 +1,12 @@
 // FRONT END FILE TO INTERACT WITH THE DOM
 
+
+
 let addButton = document.getElementById('btn-agregar')
-let addButton2 = document.getElementById('btn-img')
+// let addButton2 = document.getElementById('btn-img')
 let inputButton = document.getElementById('tareaInput')
 
-let inputButton2 = document.getElementById('imgInput')
+// let inputButton2 = document.getElementById('imgInput')
 let list = document.getElementById('lista')
 
 
@@ -102,6 +104,5 @@ window.addEventListener('load', () => {
     list.innerHTML = ''
     GetTaskFromDB()
 })
-
 
 
